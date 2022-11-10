@@ -12,12 +12,21 @@ Output: False
 """
 
 def check(a):
-    for i in ip:
-        if(i.isalpha() and i.isdigit()):
-            return True
-        else:
-            return False
-      
+    b=1
+    c=0
+    for i in a:
+        if(i.isdigit()):
+            b="z"
+            break
 
-ip = "welcomeourcount55ry"
+    for i in a:
+        if(i.isalpha()):
+            c="z"
+            break
+    if(b==c):
+        return True
+    else:
+        return False
+
+ip = "8686"
 print(check(ip))
